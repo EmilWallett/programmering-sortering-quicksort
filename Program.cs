@@ -56,7 +56,7 @@ namespace Quicksort
             Stopwatch stopWatch = new Stopwatch();         
 
                 Random rnd = new Random();
-                int tal = 8000; 
+                int tal = 16000; 
 
                 int[] arr = new int[tal];
                 for (int i = 0; i < tal; i++) {
@@ -78,7 +78,7 @@ namespace Quicksort
             
 
             Console.WriteLine("");
-            Console.WriteLine("Det tog " + stopWatch.ElapsedMilliseconds + " Millisekunder");
+            Console.WriteLine("Det tog " + stopWatch.Elapsed.TotalMilliseconds + " Millisekunder");
 
         }
 
